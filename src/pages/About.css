@@ -1,0 +1,88 @@
+.about-body {
+  padding: 3rem 1.5rem;
+  max-width: 800px;
+}
+
+.author-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--orange-light);
+  border: 1px solid #edd5c5;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.author-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 16px rgba(224, 40, 8, 0.25);
+  flex-shrink: 0;
+}
+
+.author-details h2 {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  color: var(--brown);
+  margin-bottom: 0.2rem;
+}
+
+.author-location {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  margin-bottom: 0.3rem;
+}
+
+.author-details > p:last-child {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* Prose */
+.prose h2 {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--brown);
+  margin: 2rem 0 0.8rem;
+  padding-left: 12px;
+  border-left: 3px solid var(--orange);
+}
+
+.prose p {
+  color: var(--text-mid);
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+  line-height: 1.75;
+}
+
+.prose ul {
+  color: var(--text-mid);
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+  line-height: 1.65;
+}
+
+.prose a {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.prose a:hover {
+  color: var(--orange-dark);
+}

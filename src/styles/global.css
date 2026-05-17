@@ -1,0 +1,140 @@
+/* ── GLOBAL STYLES ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --orange: #E8622A;
+  --orange-dark: #C44F1E;
+  --orange-light: #FDF0E8;
+  --orange-pale: #FFF8F4;
+  --cream: #FAFAF7;
+  --green: #4A7C59;
+  --green-light: #EBF3EE;
+  --brown: #3D2B1F;
+  --brown-mid: #6B4C3B;
+  --text: #2C2C2C;
+  --text-mid: #555;
+  --text-light: #888;
+  --border: #E8E0D8;
+  --white: #fff;
+  --font-head: 'Merriweather', Georgia, serif;
+  --font-body: 'Open Sans', sans-serif;
+  --max: 1140px;
+  --shadow: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--cream);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section { padding: 3.5rem 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  color: var(--brown);
+  margin-bottom: 0.4rem;
+}
+
+.section-heading p {
+  color: var(--text-mid);
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--orange);
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+  background: var(--orange-dark);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-block;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  padding: 11px 26px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  font-family: var(--font-body);
+  transition: all 0.2s;
+}
+
+.btn-outline:hover {
+  background: var(--orange);
+  color: #fff;
+}
+
+/* Page header used on inner pages */
+.page-header {
+  background: var(--orange-light);
+  border-bottom: 1px solid #EDD5C5;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-family: var(--font-head);
+  font-size: 2.2rem;
+  color: var(--brown);
+  margin-bottom: 0.4rem;
+}
+
+.page-header p {
+  color: var(--brown-mid);
+  font-size: 0.95rem;
+}
+
+/* Ad placeholder (replace with real AdSense code) */
+.ad-slot {
+  background: #f5ede6;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  text-align: center;
+  padding: 1.4rem;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin: 1.5rem auto;
+}
+
+@media (max-width: 768px) {
+  .section-heading h2 { font-size: 1.4rem; }
+  .page-header h1 { font-size: 1.6rem; }
+}

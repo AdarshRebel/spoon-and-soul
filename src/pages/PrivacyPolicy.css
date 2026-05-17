@@ -1,0 +1,63 @@
+.privacy-wrap {
+  max-width: 820px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.updated {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.privacy-wrap > p {
+  color: var(--text-mid);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.privacy-wrap h2 {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  color: var(--brown);
+  margin: 2rem 0 0.7rem;
+  padding-left: 12px;
+  border-left: 3px solid var(--orange);
+}
+
+.privacy-wrap h3 {
+  font-weight: 700;
+  font-size: 0.97rem;
+  color: var(--text);
+  margin: 1.2rem 0 0.4rem;
+}
+
+.privacy-wrap p {
+  color: var(--text-mid);
+  margin-bottom: 0.9rem;
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.privacy-wrap ul {
+  color: var(--text-mid);
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+  font-size: 0.94rem;
+}
+
+.privacy-wrap li {
+  margin-bottom: 0.3rem;
+  line-height: 1.65;
+}
+
+.privacy-wrap a {
+  color: var(--orange);
+  font-weight: 600;
+}
+
+.privacy-wrap a:hover {
+  color: var(--orange-dark);
+  text-decoration: underline;
+}

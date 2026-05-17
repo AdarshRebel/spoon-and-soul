@@ -1,0 +1,19 @@
+.topbar {
+  background: var(--brown);
+  color: #fff;
+  text-align: center;
+  padding: 8px 1rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.topbar a {
+  color: #F9C784;
+  border-bottom: 1px solid rgba(249, 199, 132, 0.4);
+  transition: color 0.2s;
+}
+
+.topbar a:hover {
+  color: #fff;
+}
