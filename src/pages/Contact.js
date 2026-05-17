@@ -73,7 +73,7 @@ export default function Contact() {
 
               <div className="form-row">
                 <label htmlFor="name">Full Name *</label>
-                <input id="name" name="name" type="text" placeholder="Adarsh Tamang" value={form.name} onChange={handleChange} required />
+                <input id="name" name="name" type="text" placeholder="Adarsh yadav" value={form.name} onChange={handleChange} required />
               </div>
 
               <div className="form-row">

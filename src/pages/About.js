@@ -8,7 +8,7 @@ export default function About() {
     <>
       <Helmet>
         <title>About Adarsh — Spoon & Soul</title>
-        <meta name="description" content="Meet Adarsh Tamang, the home cook behind Spoon & Soul. Learn about her kitchen philosophy and why she started this recipe blog." />
+        <meta name="description" content="Meet Adarsh yadav, the home cook behind Spoon & Soul. Learn about her kitchen philosophy and why she started this recipe blog." />
       </Helmet>
 
       <div className="page-header">
@@ -21,7 +21,7 @@ export default function About() {
         <div className="author-card">
           <div className="author-avatar">👩‍🍳</div>
           <div className="author-details">
-            <h2>Adarsh Tamang</h2>
+            <h2>Adarsh yadav</h2>
             <p className="author-location">📍 Kathmandu, Nepal</p>
             <p>Home Cook · Recipe Developer · Food Blogger</p>
           </div>
