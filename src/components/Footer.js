@@ -27,7 +27,7 @@ export default function Footer() {
           <ul>
             <li><Link to="/blog">Kitchen Tips</Link></li>
             <li><Link to="/blog">Meal Planning</Link></li>
-            <li><Link to="/about">About Maya</Link></li>
+            <li><Link to="/about">About Adarsh</Link></li>
           </ul>
         </div>
         <div className="footer__col">
