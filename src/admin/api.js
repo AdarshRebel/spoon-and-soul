@@ -1,7 +1,7 @@
 // src/admin/api.js
 // All API calls to the backend server
 
-const BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const BASE = process.env.REACT_APP_API_URL || 'https://spoon-and-soul-production.up.railway.app';
 
 
 const getToken = () => localStorage.getItem('admin_token');
