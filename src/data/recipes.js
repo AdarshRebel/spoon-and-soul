@@ -1,0 +1,171 @@
+const recipes = [
+  {
+    id: 1, slug: 'creamy-tuscan-butter-pasta', emoji: '🍜', bg: '#FFF3E0', tag: 'Dinner', cat: 'Dinner',
+    title: 'Creamy Tuscan Butter Pasta (30-Minute Dinner)',
+    excerpt: 'Sun-dried tomatoes, spinach, and a silky one-pan butter sauce. The most requested recipe on this blog.',
+    date: 'May 10, 2026', time: '30 min', prepTime: '10 min', cookTime: '20 min', servings: '4 servings', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['400g spaghetti or linguine','4 tablespoons unsalted butter','6 cloves garlic, minced','100g sun-dried tomatoes in oil, drained and chopped','150g fresh baby spinach','200ml heavy cream','80g Parmesan cheese, freshly grated','1 teaspoon Italian seasoning','1/2 teaspoon red chili flakes (optional)','Salt and black pepper to taste','Fresh basil leaves for garnish','1 cup reserved pasta water'],
+    steps: [
+      { title: 'Cook the pasta', desc: 'Bring a large pot of generously salted water to a boil. Cook your pasta according to package instructions until al dente. Before draining, scoop out 1 cup of pasta water and set aside. This starchy water is the secret to a silky sauce. Drain and set aside.' },
+      { title: 'Build the base', desc: 'In a large skillet over medium heat, melt the butter. Once it foams, add the minced garlic and cook for 1-2 minutes, stirring constantly. You want it fragrant and golden, not brown.' },
+      { title: 'Add sun-dried tomatoes', desc: 'Add the chopped sun-dried tomatoes to the pan. Cook for 2 minutes, stirring. They will release a little oil and deepen the flavour of the base. Add Italian seasoning and chili flakes now if using.' },
+      { title: 'Make the sauce', desc: 'Pour in the heavy cream and stir everything together. Let it come to a gentle simmer and cook for 3-4 minutes until slightly thickened. Add half the Parmesan and stir until melted. Season with salt and pepper.' },
+      { title: 'Add spinach and pasta', desc: 'Add fresh spinach to the sauce and stir until wilted, about 1 minute. Add your drained pasta directly into the pan. Toss everything together, adding splashes of reserved pasta water as needed to loosen the sauce.' },
+      { title: 'Serve immediately', desc: 'Plate the pasta and top with remaining Parmesan and fresh basil. Serve right away with a green salad and crusty bread.' },
+    ],
+    tips: ['Always salt your pasta water heavily - it should taste like the sea.','Reserve pasta water before draining - the starch helps the sauce stick to the noodles.','Do not walk away from the garlic. It can burn in seconds.','Sun-dried tomatoes in oil work best here - they are softer and more flavourful.','Leftovers keep for 2 days. Reheat with a splash of water over low heat.'],
+    intro: `There are weeknight dinners that feel like work, and then there are weeknight dinners that feel like a reward. This Creamy Tuscan Butter Pasta firmly belongs in the second category. It has been the most made, most photographed, and most messaged-about recipe on this blog since the day I posted it.\n\nI first made this on a Tuesday evening when I had half a bag of sun-dried tomatoes, some wilting spinach, and exactly zero desire to do anything complicated. Thirty minutes later, I was sitting down to a bowl of pasta that tasted like something from a restaurant. I have made it dozens of times since, and it has never once disappointed.\n\nThe magic here is the one-pan sauce. Butter, garlic, sun-dried tomatoes, cream, and Parmesan come together in the same pan while your pasta cooks. Then everything gets tossed together with a splash of starchy pasta water that makes the sauce silky and cohesive. It is simple technique, but it produces genuinely impressive results.\n\nA few things make this recipe work: quality Parmesan (please grate it yourself - the pre-grated stuff does not melt properly), sun-dried tomatoes packed in oil rather than dry-packed, and most importantly, that reserved pasta water. Do not skip it. The starch in the water transforms a sauce that might otherwise be heavy into something that coats every strand of pasta perfectly.\n\nThis is the kind of dish that impresses guests but takes less effort than it looks. It is endlessly adaptable too - add chicken, shrimp, or mushrooms if you want to make it more substantial. But honestly, as it is, it is already perfect.`
+  },
+  {
+    id: 2, slug: 'golden-coconut-chicken-curry', emoji: '🍛', bg: '#FDECD8', tag: 'Dinner', cat: 'Dinner',
+    title: 'Golden Coconut Chicken Curry in 40 Minutes',
+    excerpt: 'A fragrant, warming curry with coconut milk and turmeric. Feeds the whole family and reheats beautifully.',
+    date: 'Apr 28, 2026', time: '40 min', prepTime: '10 min', cookTime: '30 min', servings: '5 servings', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['700g chicken thighs, boneless and skinless, cut into chunks','1 can (400ml) full-fat coconut milk','2 tablespoons coconut oil or vegetable oil','1 large onion, finely diced','5 garlic cloves, minced','1 tablespoon fresh ginger, grated','2 teaspoons ground turmeric','1.5 teaspoons ground cumin','1 teaspoon ground coriander','1 teaspoon garam masala','1/2 teaspoon cayenne pepper','1 can (400g) diced tomatoes','Salt to taste','Fresh coriander for serving','Basmati rice and naan to serve'],
+    steps: [
+      { title: 'Saute the aromatics', desc: 'Heat oil in a large deep pan over medium-high heat. Add the diced onion and cook for 6-8 minutes, stirring occasionally, until golden and soft. Do not rush this step - caramelised onion is the flavour foundation of the whole curry.' },
+      { title: 'Add garlic and ginger', desc: 'Add the minced garlic and grated ginger to the onions. Cook for 2 minutes, stirring constantly, until very fragrant. The mixture will look almost paste-like.' },
+      { title: 'Bloom the spices', desc: 'Add all the ground spices directly to the pan. Stir and cook for 1-2 minutes. This step activates the spices and deepens their flavour dramatically. The pan will smell extraordinary.' },
+      { title: 'Brown the chicken', desc: 'Add the chicken pieces to the spiced onion mixture. Stir so every piece gets coated in the spices. Cook for 4-5 minutes until the outside of the chicken is sealed and starting to colour.' },
+      { title: 'Add tomatoes and coconut milk', desc: 'Pour in the canned tomatoes and stir to combine. Cook for 3 minutes, then add the coconut milk. Bring to a gentle simmer and cook uncovered for 15-18 minutes until the chicken is cooked through and the sauce has thickened slightly.' },
+      { title: 'Season and serve', desc: 'Taste and adjust salt and spice levels. Serve over fluffy basmati rice with naan bread, topped generously with fresh coriander.' },
+    ],
+    tips: ['Use chicken thighs, not breasts - they stay juicy even if slightly overcooked.','Full-fat coconut milk is essential - light coconut milk makes a watery sauce.','Blooming the spices in oil is the most important technique in curry cooking.','This curry freezes beautifully for up to 3 months.','Stir a tablespoon of butter in at the very end for extra richness.'],
+    intro: `Growing up, the smell of curry on the stove was the smell of home. My mother made curry at least twice a week. This recipe is my weeknight version: faster than her slow-cooked original, but with all the same soul.\n\nThe secret to a great curry at home is not a long list of exotic ingredients - it is technique. Specifically, taking the time to properly caramelise your onions and bloom your spices. These two steps add depth and complexity that no shortcut can replicate.\n\nTurmeric gives this curry its signature golden colour and earthy warmth. Combined with coconut milk, it creates a sauce that is creamy without being heavy, fragrant without being overwhelming. I use chicken thighs because they are more forgiving than breast meat and stay juicy through the cooking process.\n\nOne of the things I love most about this recipe is how well it reheats. The flavours actually improve overnight as the spices continue to meld. I often make it on a Sunday and eat it through the week over rice, in wraps, or with flatbread for a quick lunch.\n\nIf you are new to making curry from scratch, this is the recipe to start with. It is straightforward, hard to mess up, and the result tastes like you spent hours in the kitchen.`
+  },
+  {
+    id: 3, slug: 'mango-avocado-summer-salad', emoji: '🥗', bg: '#E8F5E9', tag: 'Salads', cat: 'Salads',
+    title: 'Mango Avocado Summer Salad with Honey-Lime Dressing',
+    excerpt: 'Bright, refreshing, and ready in 15 minutes. The honey-lime dressing makes everything sing.',
+    date: 'Apr 15, 2026', time: '15 min', prepTime: '15 min', cookTime: '0 min', servings: '2 servings', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['1 large ripe mango, peeled and diced','2 ripe avocados, diced','1 small red onion, thinly sliced','200g mixed greens or baby spinach','1 small cucumber, sliced','100g cherry tomatoes, halved','3 tablespoons fresh coriander, chopped','3 tablespoons fresh lime juice','2 tablespoons honey or maple syrup','2 tablespoons olive oil','1 teaspoon Dijon mustard','1/2 teaspoon salt','Pinch of chili flakes (optional)'],
+    steps: [
+      { title: 'Make the dressing', desc: 'In a small jar, combine lime juice, honey, olive oil, Dijon mustard, salt, and chili flakes. Whisk until emulsified. Taste - it should be bright, slightly sweet, and tangy.' },
+      { title: 'Prep the ingredients', desc: 'Dice the mango and avocado into equal-sized chunks. Thinly slice the red onion. If you find raw onion too sharp, soak slices in cold water for 5 minutes then drain. Halve the cherry tomatoes and slice the cucumber.' },
+      { title: 'Assemble the salad', desc: 'Arrange the greens on a large serving platter. Layer the mango, avocado, cucumber, tomatoes, and red onion on top. Scatter the coriander leaves over everything.' },
+      { title: 'Dress and serve', desc: 'Drizzle the dressing over the salad just before serving. Toss gently - you do not want to break up the avocado too much. Serve immediately for the best texture.' },
+    ],
+    tips: ['Choose an avocado that gives slightly when pressed.','Dress the salad just before eating - the greens will wilt if left.','Add grilled chicken, prawns, or chickpeas for a heartier version.','The dressing keeps in the fridge for up to a week.','Alphonso or Ataulfo mangoes are the sweetest for this salad.'],
+    intro: `Some recipes exist for when you need something nourishing and beautiful but have no desire to stand over a stove. This Mango Avocado Summer Salad is exactly that - 15 minutes from fridge to table, no cooking required.\n\nThe combination of mango and avocado is one of those perfect pairings that seems obvious once you have tried it. The mango brings sweetness and acidity. The avocado brings creaminess and richness. Together they create a balance that makes every bite interesting.\n\nThe real star is the honey-lime dressing. A squeeze of lime, a drizzle of honey, olive oil, and a little mustard to hold it all together. The mustard acts as an emulsifier, binding the oil and lime juice into something smooth and coating.\n\nI make this salad all summer long - for lunch, as a side dish at barbecues, and sometimes as a light dinner with some grilled flatbread on the side. It is the kind of salad that converts people who think they do not like salad.`
+  },
+  {
+    id: 4, slug: 'honey-oat-sandwich-bread', emoji: '🍞', bg: '#FFF8DC', tag: 'Baking', cat: 'Baking',
+    title: 'Honey Oat Sandwich Bread — Perfect for Beginners',
+    excerpt: 'Soft, slightly sweet, and great for sandwiches. This beginner loaf will make your kitchen smell like a bakery.',
+    date: 'Mar 18, 2026', time: '2 hrs 30 min', prepTime: '20 min', cookTime: '35 min', servings: '1 loaf (12 slices)', difficulty: 'Medium', author: 'Maya Tamang',
+    ingredients: ['360g bread flour or all-purpose flour','80g rolled oats, plus extra for topping','2.25 teaspoons instant yeast (1 packet)','1 teaspoon salt','240ml warm water','120ml warm whole milk','3 tablespoons honey','2 tablespoons unsalted butter, softened','1 egg for egg wash'],
+    steps: [
+      { title: 'Activate the yeast', desc: 'Combine warm water, warm milk, and honey in a large bowl. Sprinkle the yeast over the top and let sit for 5-10 minutes until foamy. If it does not foam, your yeast may be old - start again with fresh yeast.' },
+      { title: 'Mix the dough', desc: 'Add the flour, rolled oats, and salt to the yeast mixture. Mix until a shaggy dough forms. Add the softened butter and continue mixing until incorporated.' },
+      { title: 'Knead', desc: 'Turn the dough out onto a lightly floured surface and knead for 8-10 minutes until smooth and elastic. It should spring back when poked. Alternatively, use a stand mixer with a dough hook on medium for 6 minutes.' },
+      { title: 'First rise', desc: 'Place the dough in a lightly oiled bowl, cover with a clean tea towel, and leave in a warm place for 1-1.5 hours until doubled in size.' },
+      { title: 'Shape and second rise', desc: 'Punch down the dough and shape into a log the length of your loaf tin. Place seam-side down into a greased 9x5 inch loaf tin. Cover and let rise again for 45-60 minutes until the dough crowns above the rim.' },
+      { title: 'Bake', desc: 'Preheat oven to 190C (375F). Brush the top with beaten egg and scatter rolled oats over the top. Bake for 30-35 minutes until deep golden brown and hollow-sounding when tapped. Cool on a wire rack for at least 20 minutes before slicing.' },
+    ],
+    tips: ['Warm not hot water is critical - water above 60C will kill the yeast.','Do not skip the second rise - it gives the bread a finer, more even crumb.','The bread is done when it reaches an internal temperature of 93C.','Store wrapped at room temperature for 3 days, or freeze for up to 3 months.','The honey keeps this bread moist for longer than an unsweetened loaf.'],
+    intro: `I was terrified of bread baking for years. It seemed like the domain of people with strong forearms and decades of experience. Then I made this loaf, and everything changed.\n\nThis Honey Oat Sandwich Bread is genuinely beginner-friendly. The rolled oats add a gentle chewiness and subtle nuttiness that makes it far more interesting than a plain white loaf. The honey keeps it moist for days and gives the crust a beautiful golden colour.\n\nBread baking is really just about understanding a few key things: your yeast needs warmth to activate, your dough needs time to rise, and your oven needs to be properly preheated. Once you know those three things, you can make almost any bread.\n\nThis loaf makes the best sandwiches. Soft enough to eat fresh but sturdy enough to hold fillings without falling apart. Toast it lightly the next day and spread it with good butter for one of life's simple pleasures.\n\nBake this on a weekend morning and watch how quickly it disappears.`
+  },
+  {
+    id: 5, slug: 'fluffy-buttermilk-pancakes', emoji: '🥞', bg: '#FFF3E0', tag: 'Breakfast', cat: 'Breakfast',
+    title: 'Fluffy Buttermilk Pancakes That Actually Rise',
+    excerpt: 'Light, airy pancakes with golden edges. The secret is letting the batter rest for 5 minutes before cooking.',
+    date: 'Mar 5, 2026', time: '20 min', prepTime: '10 min', cookTime: '10 min', servings: '4 servings (about 12 pancakes)', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['240g all-purpose flour','2 tablespoons sugar','2 teaspoons baking powder','1/2 teaspoon baking soda','1/2 teaspoon salt','480ml buttermilk, at room temperature','2 large eggs','3 tablespoons unsalted butter, melted and cooled','1 teaspoon vanilla extract','Butter or neutral oil for the pan','Maple syrup, fresh berries, and extra butter to serve'],
+    steps: [
+      { title: 'Mix dry ingredients', desc: 'In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt. Make a well in the centre.' },
+      { title: 'Mix wet ingredients', desc: 'In a separate bowl, whisk together the buttermilk, eggs, melted butter, and vanilla extract.' },
+      { title: 'Combine - do not overmix', desc: 'Pour the wet ingredients into the well in the dry ingredients. Stir gently with a spatula until just combined - the batter will be lumpy. Stop mixing as soon as no dry flour is visible. Overmixing leads to tough, flat pancakes.' },
+      { title: 'Rest the batter', desc: 'Let the batter sit for 5 minutes. This allows the baking powder to start working and the gluten to relax, which is key to getting that tall, fluffy result.' },
+      { title: 'Cook the pancakes', desc: 'Heat a non-stick pan over medium heat. Lightly grease with butter. Pour about 60ml of batter per pancake. Cook until bubbles form on the surface and the edges look set - about 2-3 minutes. Flip and cook for another 1-2 minutes until golden.' },
+      { title: 'Serve immediately', desc: 'Serve straight from the pan with maple syrup, a pat of butter, and fresh berries. Pancakes lose their puff quickly, so eat them as they come off the pan.' },
+    ],
+    tips: ['No buttermilk? Add 1 tablespoon of white vinegar to 240ml of regular milk. Let sit for 5 minutes.','Room temperature buttermilk is important - cold buttermilk can cause melted butter to clump.','The lumpy batter is correct. Smooth batter means overmixed batter.','Keep finished pancakes warm in a 90C oven on a baking sheet while you cook the rest.','Leftover pancakes freeze well. Reheat in the toaster.'],
+    intro: `A truly fluffy pancake is one of the most underrated things in cooking. Not the dense, chewy kind. Not the paper-thin kind. I mean a proper, tall, cloud-like pancake with crisp golden edges and a tender interior.\n\nThe difference between a good pancake and a great one comes down almost entirely to technique. The ingredients are simple. How you handle them determines everything.\n\nThe two most important rules: do not overmix, and let the batter rest. Overmixing develops the gluten in the flour, which makes pancakes tough and flat. Letting the batter rest gives the baking powder time to start reacting, creating tiny bubbles that make the pancakes rise tall in the pan.\n\nButtermilk is the other game-changer. The acidity reacts with the baking soda to create additional lift, and it adds a subtle tang that makes these pancakes taste like something from a good brunch spot.\n\nI make these on weekend mornings when there is no rush. There is something meditative about standing at the stove, watching bubbles form across the surface of each pancake, waiting for exactly the right moment to flip.`
+  },
+  {
+    id: 6, slug: 'strawberry-ricotta-cake', emoji: '🎂', bg: '#FCE4EC', tag: 'Desserts', cat: 'Desserts',
+    title: 'Strawberry Ricotta Cake — Light, Moist and Not Too Sweet',
+    excerpt: 'Perfect for afternoon tea or a birthday treat. My most-made dessert and it requires zero frosting skills.',
+    date: 'Apr 2, 2026', time: '1 hr', prepTime: '15 min', cookTime: '45 min', servings: '8 servings', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['250g whole milk ricotta cheese','150g caster sugar','120ml neutral oil','3 large eggs','1 teaspoon vanilla extract','Zest of 1 lemon','200g all-purpose flour','1.5 teaspoons baking powder','1/2 teaspoon salt','300g fresh strawberries, hulled and halved','2 tablespoons icing sugar for dusting'],
+    steps: [
+      { title: 'Prep', desc: 'Preheat your oven to 175C (350F). Grease a 23cm round cake tin and line the base with parchment paper. Hull and halve the strawberries.' },
+      { title: 'Mix the wet ingredients', desc: 'In a large bowl, whisk together the ricotta, sugar, oil, eggs, vanilla, and lemon zest until smooth and creamy.' },
+      { title: 'Add dry ingredients', desc: 'Sift the flour, baking powder, and salt into the bowl. Fold gently with a spatula until just combined.' },
+      { title: 'Assemble', desc: 'Pour the batter into the prepared tin and smooth the top. Arrange the strawberry halves cut-side down over the batter, pressing them in slightly.' },
+      { title: 'Bake', desc: 'Bake for 40-45 minutes until golden and a skewer inserted into the centre comes out clean.' },
+      { title: 'Cool and serve', desc: 'Cool in the tin for 15 minutes, then transfer to a wire rack. Once completely cool, dust with icing sugar and serve.' },
+    ],
+    tips: ['Whole milk ricotta gives the best texture - low-fat versions can make the cake dense.','The lemon zest brightens all the flavours and balances the sweetness of the strawberries.','You can use raspberries, blueberries, or sliced peaches instead of strawberries.','Store covered at room temperature for 2 days, or refrigerated for 4 days.','Lovely with a spoonful of whipped cream or a scoop of vanilla ice cream.'],
+    intro: `This Strawberry Ricotta Cake has been my most-made dessert for the past two years. I return to it again and again because it asks so little of you and delivers so much in return.\n\nThere is no creaming butter, no frosting, no decoration required. The batter comes together in one bowl in about 10 minutes, and the result is a cake that is moist, tender, and subtly flavoured with lemon and vanilla.\n\nThe ricotta is what makes it special. It adds moisture and a gentle richness without making the cake heavy. I first discovered ricotta in baking when I was trying to use up a tub from the fridge. What I found was that it made the most impossibly soft crumb.\n\nThe strawberries sink into the top of the cake as it bakes, creating a beautiful, slightly rustic appearance that looks like you have put in more effort than you have.\n\nThis is the cake I make for birthdays when I do not want to deal with tiered layers and piping bags. It has never failed me.`
+  },
+  {
+    id: 7, slug: 'slow-cooked-lamb-stew', emoji: '🫕', bg: '#F3E5F5', tag: 'Dinner', cat: 'Dinner',
+    title: 'Slow-Cooked Lamb Stew with Root Vegetables',
+    excerpt: 'Fall-apart tender lamb with root vegetables and herbs. Best made on a lazy Sunday afternoon.',
+    date: 'Feb 20, 2026', time: '3 hrs', prepTime: '20 min', cookTime: '2 hrs 40 min', servings: '6 servings', difficulty: 'Medium', author: 'Maya Tamang',
+    ingredients: ['1kg lamb shoulder or leg, cut into large chunks','3 tablespoons olive oil','1 large onion, roughly chopped','4 garlic cloves, minced','2 carrots, cut into chunks','2 parsnips, cut into chunks','3 medium potatoes, quartered','400ml lamb or beef stock','1 can (400g) diced tomatoes','2 tablespoons tomato paste','2 sprigs fresh rosemary','4 sprigs fresh thyme','2 bay leaves','Salt and black pepper','Fresh parsley for serving','Crusty bread to serve'],
+    steps: [
+      { title: 'Brown the lamb', desc: 'Pat the lamb pieces dry and season generously with salt and pepper. Heat 2 tablespoons of oil in a heavy-bottomed pot over high heat. Brown the lamb in batches for 3-4 minutes per side until deeply coloured. Remove and set aside.' },
+      { title: 'Saute the aromatics', desc: 'Reduce heat to medium and add the remaining oil. Cook the onion for 5 minutes until softened, then add the garlic and cook for another minute. Stir in the tomato paste and cook for 2 minutes.' },
+      { title: 'Build the stew', desc: 'Return the lamb to the pot. Add the stock, diced tomatoes, rosemary, thyme, and bay leaves. Bring to a simmer, then reduce heat to the lowest setting. Cover and cook for 1.5 hours.' },
+      { title: 'Add the vegetables', desc: 'Add the carrots, parsnips, and potatoes. Stir gently, replace the lid, and continue cooking for another hour until the vegetables are tender and the lamb is falling apart.' },
+      { title: 'Season and serve', desc: 'Remove the herb sprigs and bay leaves. Taste and adjust seasoning. Ladle into deep bowls and top with fresh parsley. Serve with crusty bread.' },
+    ],
+    tips: ['Browning the meat is the most important step - do it in batches so you are frying, not steaming.','Lamb shoulder has more fat and connective tissue, making it ideal for slow cooking.','This stew is better the next day.','You can make this in a slow cooker on low for 7-8 hours.','Remove the lid for the last 30 minutes for a thicker sauce.'],
+    intro: `If there is a dish that represents everything I love about slow cooking, it is this lamb stew. It requires patience - nearly three hours from start to finish - but the effort is mostly hands-off.\n\nSlow heat does something magical to tough cuts of meat. The connective tissue in lamb shoulder breaks down over time into gelatin, giving the cooking liquid a silky body and richness that no amount of cream could replicate.\n\nI make this on Sunday afternoons when I have nowhere to be. I brown the lamb, build the base, and then let the stove do the rest. The smell that fills the kitchen over those three hours builds anticipation in the best possible way.\n\nThis is proper winter comfort food. The kind of meal you eat when it is cold outside and you want something that warms you from the inside out. Pair it with thick slices of crusty bread to soak up the sauce.`
+  },
+  {
+    id: 8, slug: 'chai-spiced-overnight-oats', emoji: '🍵', bg: '#E3F2FD', tag: 'Breakfast', cat: 'Breakfast',
+    title: 'Chai Spiced Overnight Oats — 5 Minutes the Night Before',
+    excerpt: 'Spiced with cardamom, cinnamon, and ginger. Prep in 5 minutes the night before for a nourishing morning.',
+    date: 'Feb 8, 2026', time: '5 min + overnight', prepTime: '5 min', cookTime: '0 min', servings: '1 serving', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['80g rolled oats','240ml milk of choice','3 tablespoons plain yogurt','1 tablespoon chia seeds','1 tablespoon honey or maple syrup','1/2 teaspoon ground cinnamon','1/4 teaspoon ground cardamom','1/4 teaspoon ground ginger','Pinch of ground cloves','Pinch of black pepper','1 teaspoon vanilla extract','Toppings: sliced banana, chopped pistachios, a drizzle of honey'],
+    steps: [
+      { title: 'Combine everything', desc: 'In a jar or container with a lid, combine the oats, milk, yogurt, chia seeds, honey, all the spices, and vanilla. Stir well until everything is evenly mixed.' },
+      { title: 'Refrigerate overnight', desc: 'Seal the jar and refrigerate for at least 6 hours or overnight. The oats will absorb the liquid and swell to a creamy, pudding-like consistency.' },
+      { title: 'Add toppings and serve', desc: 'In the morning, give the oats a good stir. If they are thicker than you like, add a splash of milk. Top with sliced banana, chopped pistachios, and a drizzle of honey.' },
+    ],
+    tips: ['Make 3-5 jars on Sunday evening for the whole week - they keep for 5 days.','Use rolled oats, not quick oats. Quick oats turn mushy overnight.','Microwave for 60-90 seconds if you prefer warm oats.','The black pepper is a traditional chai ingredient - do not skip it.','Stir in a scoop of vanilla protein powder for extra protein.'],
+    intro: `Growing up, chai was not just a drink in my house - it was a ritual. My grandmother made it every morning without a recipe, always getting it exactly right. These overnight oats are my attempt to capture that same warmth in breakfast form.\n\nThe chai spice blend transforms ordinary oats into something genuinely exciting to wake up to. The spices bloom gently overnight in the cold milk, creating a flavour that is warm and complex without any cooking required.\n\nI started making overnight oats during a period when my mornings were chaotic and I kept skipping breakfast. Spending five minutes the night before meant I had no excuse in the morning.\n\nThis has become my most-made recipe on the whole blog - not because it is the most impressive, but because it solves a real problem. If you struggle with breakfast, make a batch of these tonight.`
+  },
+  {
+    id: 9, slug: 'roasted-veggie-wraps', emoji: '🥙', bg: '#E8F5E9', tag: 'Vegetarian', cat: 'Vegetarian',
+    title: 'Roasted Veggie Wraps with Hummus — Easy Meal Prep Lunch',
+    excerpt: 'Caramelised zucchini, red pepper, and hummus in a warm tortilla. Meal prep friendly and endlessly customisable.',
+    date: 'Jan 25, 2026', time: '30 min', prepTime: '10 min', cookTime: '20 min', servings: '3 servings', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['2 medium zucchini, sliced','1 large red bell pepper, sliced','1 red onion, cut into wedges','200g cherry tomatoes','3 tablespoons olive oil','1 teaspoon smoked paprika','1 teaspoon cumin','1/2 teaspoon garlic powder','Salt and black pepper','3 large flour tortillas','6 tablespoons hummus','60g feta cheese, crumbled','Fresh rocket or spinach','Fresh lemon juice for drizzling'],
+    steps: [
+      { title: 'Roast the vegetables', desc: 'Preheat oven to 220C (425F). Spread all vegetables on a large baking sheet. Drizzle with olive oil and sprinkle over the spices, salt, and pepper. Toss to coat and spread into a single layer. Roast for 18-22 minutes until tender and caramelised at the edges.' },
+      { title: 'Warm the wraps', desc: 'While the vegetables roast, warm your tortillas directly over a gas flame for 20-30 seconds per side, or wrap in a damp paper towel and microwave for 30 seconds.' },
+      { title: 'Assemble the wraps', desc: 'Spread 2 tablespoons of hummus over each wrap. Layer on a handful of fresh greens, a generous portion of roasted vegetables, and crumbled feta. Squeeze a little lemon juice over the top.' },
+      { title: 'Wrap and serve', desc: 'Fold in the sides of the tortilla, then roll it up tightly from the bottom. Cut in half diagonally and serve immediately. For meal prep, wrap in foil and refrigerate for up to 2 days.' },
+    ],
+    tips: ['Do not crowd the baking sheet - the vegetables will steam instead of roast.','Add a drizzle of tahini or chili sauce for extra flavour.','For meal prep: keep components separate and assemble just before eating.','Swap the feta for grilled halloumi or a fried egg for a different take.','These wraps are also great cold - pack them for work or school.'],
+    intro: `There is a certain kind of lunch that manages to be healthy and genuinely satisfying at the same time, without feeling like a compromise. These roasted veggie wraps are exactly that.\n\nThe key is the roasting. Raw vegetables in a wrap can feel underwhelming. But roasting transforms them. The edges caramelise, the sugars concentrate, and the flavour deepens in a way that makes even simple zucchini and peppers taste rich and complex.\n\nThese also make excellent meal prep. I roast a big batch of vegetables on Sunday, keep them in the fridge, and assemble wraps throughout the week. The components stay fresh for up to 4 days.\n\nThe wrap is just a vehicle - feel free to change the vegetables based on what you have. Mushrooms, broccoli, sweet potato, aubergine - almost anything works with this spice combination.`
+  },
+  {
+    id: 10, slug: 'classic-tomato-basil-soup', emoji: '🍲', bg: '#FFF3E0', tag: 'Soups', cat: 'Soups',
+    title: 'Classic Tomato Basil Soup — Creamy, Comforting and 30 Minutes',
+    excerpt: 'Rich, velvety tomato soup made from pantry staples. Better than anything from a tin and almost as easy.',
+    date: 'Jan 10, 2026', time: '30 min', prepTime: '5 min', cookTime: '25 min', servings: '4 servings', difficulty: 'Easy', author: 'Maya Tamang',
+    ingredients: ['2 cans (800g total) whole peeled tomatoes','1 large onion, roughly chopped','5 garlic cloves, roughly chopped','3 tablespoons olive oil','500ml vegetable stock','1 teaspoon sugar','1 teaspoon dried oregano','100ml heavy cream (optional)','Large handful of fresh basil leaves','Salt and black pepper to taste','Crusty bread or grilled cheese sandwiches to serve'],
+    steps: [
+      { title: 'Saute onion and garlic', desc: 'Heat olive oil in a large pot over medium heat. Add the onion and cook for 6-8 minutes until soft and lightly golden. Add the garlic and cook for 2 more minutes.' },
+      { title: 'Add tomatoes and stock', desc: 'Pour in the canned tomatoes with all their juices, vegetable stock, sugar, and oregano. Stir to combine. Bring to a simmer and cook uncovered for 15 minutes.' },
+      { title: 'Blend until smooth', desc: 'Remove from heat. Add the fresh basil leaves. Use an immersion blender to blend the soup until completely smooth. Alternatively, carefully transfer to a standing blender in batches.' },
+      { title: 'Add cream and season', desc: 'Return the pot to low heat. Stir in the cream if using. Taste and season with salt, pepper, and more sugar if the tomatoes are too acidic. Heat gently.' },
+      { title: 'Serve', desc: 'Ladle into bowls and finish with a drizzle of olive oil and fresh basil leaves. Serve with crusty bread or alongside a grilled cheese sandwich.' },
+    ],
+    tips: ['Quality canned tomatoes make a huge difference - San Marzano tomatoes are the best.','The teaspoon of sugar balances the acidity of the tomatoes.','Blend while slightly warm - very hot liquids can cause pressure to build in a blender.','For a vegan version, swap cream for full-fat coconut milk or leave it out.','This soup freezes perfectly for up to 3 months without the cream.'],
+    intro: `There is a reason tomato soup has endured for generations. It is deeply comforting, endlessly adaptable, and made almost entirely from pantry staples. This version takes about 30 minutes and produces something far better than anything from a tin.\n\nThe secret is building flavour before the tomatoes go in. Taking the time to properly saute the onion until golden adds sweetness and depth that makes the finished soup taste slow-cooked even though it is not.\n\nFresh basil added right before blending gives this soup its brightness. The heat wilts the basil and infuses the soup with that unmistakeable herby fragrance without cooking out its flavour.\n\nI make this soup more than almost anything else. It is my answer to cold evenings, uncertain appetites, and those moments when I want something warm and nourishing without putting much thought into it.`
+  }
+];
+
+export const RECIPES = recipes;
+
+export const getRecipeBySlug = (slug) => {
+  return recipes.find((recipe) => recipe.slug === slug);
+};
+
+export default recipes;

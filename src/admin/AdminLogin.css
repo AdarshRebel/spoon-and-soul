@@ -1,0 +1,106 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3D2B1F 0%, #5C3D2E 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.login-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.login-logo {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-box h1 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.6rem;
+  color: #3D2B1F;
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+
+.login-box > p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1.8rem;
+}
+
+.login-error {
+  background: #FDE8E8;
+  border: 1px solid #F5A5A5;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  color: #B91C1C;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.login-field {
+  text-align: left;
+  margin-bottom: 1.1rem;
+}
+
+.login-field label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #E8E0D8;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-field input:focus {
+  border-color: #E8622A;
+}
+
+.login-box button[type="submit"] {
+  width: 100%;
+  background: #E8622A;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.login-box button[type="submit"]:hover { background: #C44F1E; }
+.login-box button[type="submit"]:disabled { background: #ccc; cursor: not-allowed; }
+
+.login-back {
+  display: inline-block;
+  margin-top: 1.4rem;
+  font-size: 0.82rem;
+  color: #aaa;
+  transition: color 0.2s;
+}
+
+.login-back:hover { color: #E8622A; }

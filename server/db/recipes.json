@@ -1,0 +1,45 @@
+[
+  {
+    "id": "a1e3fab1-f523-4049-b273-7ff04f84b32f",
+    "slug": "creamy-tuscan-butter-pasta",
+    "title": "Creamy Tuscan Butter Pasta",
+    "excerpt": "Sun-dried tomatoes, spinach, and a silky one-pan butter sauce.",
+    "category": "Dinner",
+    "emoji": "🍜",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "servings": "4 servings",
+    "difficulty": "Easy",
+    "ingredients": [
+      "400g spaghetti",
+      "4 tbsp butter",
+      "6 garlic cloves",
+      "100g sun-dried tomatoes",
+      "150g spinach",
+      "200ml cream",
+      "80g Parmesan"
+    ],
+    "steps": [
+      {
+        "title": "Cook pasta",
+        "desc": "Boil pasta in salted water until al dente. Reserve 1 cup pasta water before draining."
+      },
+      {
+        "title": "Make sauce",
+        "desc": "Melt butter, fry garlic, add tomatoes, cream and Parmesan. Simmer 5 minutes."
+      },
+      {
+        "title": "Combine",
+        "desc": "Add spinach and pasta to sauce. Toss with pasta water until silky."
+      }
+    ],
+    "tips": [
+      "Reserve pasta water — it makes the sauce silky.",
+      "Use fresh Parmesan, not pre-grated."
+    ],
+    "intro": "A delicious, quick weeknight pasta that tastes like restaurant quality.",
+    "published": true,
+    "createdAt": "2026-05-18T20:26:43.440Z",
+    "updatedAt": "2026-05-18T20:26:43.441Z"
+  }
+]

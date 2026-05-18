@@ -1,0 +1,111 @@
+.recipe-form { max-width: 860px; }
+
+.rf-loading { padding: 3rem; text-align: center; color: #888; font-size: 1rem; }
+
+.rf-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.rf-header h1 { font-family: 'Merriweather', Georgia, serif; font-size: 1.5rem; color: #3D2B1F; margin-bottom: 0.2rem; }
+.rf-header p { color: #888; font-size: 0.88rem; }
+
+.rf-cancel { background: none; border: 1px solid #E8E0D8; border-radius: 8px; padding: 8px 18px; font-size: 0.85rem; font-weight: 700; cursor: pointer; color: #555; font-family: 'Open Sans', sans-serif; transition: all 0.2s; }
+.rf-cancel:hover { border-color: #E8622A; color: #E8622A; }
+
+.rf-error { background: #FDE8E8; border: 1px solid #F5A5A5; border-radius: 8px; padding: 0.8rem 1rem; font-size: 0.88rem; color: #B91C1C; margin-bottom: 1.2rem; }
+.rf-success { background: #D1FAE5; border: 1px solid #6EE7B7; border-radius: 8px; padding: 0.8rem 1rem; font-size: 0.88rem; color: #065F46; margin-bottom: 1.2rem; font-weight: 700; }
+
+/* CARDS */
+.rf-card { background: #fff; border: 1px solid #E8E0D8; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+
+.rf-card__title { font-family: 'Merriweather', Georgia, serif; font-size: 1.05rem; color: #3D2B1F; margin-bottom: 1.2rem; padding-bottom: 0.6rem; border-bottom: 2px solid #E8622A; }
+
+.rf-card__title-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+
+.word-count { font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; }
+.word-count.good { background: #D1FAE5; color: #065F46; }
+.word-count.ok   { background: #FEF3C7; color: #92400E; }
+.word-count.low  { background: #FDE8E8; color: #B91C1C; }
+
+/* FIELDS */
+.rf-field { margin-bottom: 1rem; }
+.rf-field label { display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #555; margin-bottom: 0.4rem; }
+.rf-field input, .rf-field textarea, .rf-field select {
+  width: 100%; padding: 10px 13px; border: 1.5px solid #E8E0D8; border-radius: 8px;
+  font-size: 0.92rem; font-family: 'Open Sans', sans-serif; color: #2C2C2C;
+  background: #fff; outline: none; transition: border-color 0.2s; resize: vertical;
+}
+.rf-field input:focus, .rf-field textarea:focus, .rf-field select:focus { border-color: #E8622A; }
+
+.rf-hint { font-size: 0.78rem; color: #aaa; font-style: italic; }
+.rf-field .rf-hint { display: inline; margin-left: 6px; font-size: 0.75rem; }
+
+.rf-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+
+.rf-field--emoji .emoji-picker { display: flex; align-items: center; gap: 0.5rem; }
+.emoji-preview { font-size: 1.8rem; }
+.rf-field--emoji select { flex: 1; font-size: 1.1rem; }
+
+.rf-intro-area { width: 100%; padding: 12px 14px; border: 1.5px solid #E8E0D8; border-radius: 8px; font-size: 0.95rem; font-family: 'Open Sans', sans-serif; color: #2C2C2C; outline: none; transition: border-color 0.2s; resize: vertical; line-height: 1.75; }
+.rf-intro-area:focus { border-color: #E8622A; }
+
+/* INGREDIENT / TIP LIST */
+.rf-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 0.8rem; }
+
+.rf-list-item { display: flex; align-items: center; gap: 0.6rem; }
+.rf-list-num { width: 28px; height: 28px; border-radius: 50%; background: #FDF0E8; color: #E8622A; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rf-list-item input { flex: 1; padding: 9px 12px; border: 1.5px solid #E8E0D8; border-radius: 8px; font-size: 0.9rem; font-family: 'Open Sans', sans-serif; outline: none; transition: border-color 0.2s; }
+.rf-list-item input:focus { border-color: #E8622A; }
+
+.rf-remove { background: none; border: none; color: #ccc; cursor: pointer; font-size: 1rem; padding: 4px 6px; border-radius: 4px; transition: color 0.2s; line-height: 1; }
+.rf-remove:hover { color: #EF4444; }
+
+.rf-add-btn { background: none; border: 1.5px dashed #E8E0D8; border-radius: 8px; padding: 8px 18px; font-size: 0.85rem; font-weight: 700; cursor: pointer; color: #888; font-family: 'Open Sans', sans-serif; transition: all 0.2s; width: 100%; }
+.rf-add-btn:hover { border-color: #E8622A; color: #E8622A; background: #FDF0E8; }
+
+/* STEPS */
+.rf-steps-list { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 0.8rem; }
+
+.rf-step-item { background: #FAFAF7; border: 1px solid #E8E0D8; border-radius: 10px; padding: 1rem; }
+
+.rf-step-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.7rem; }
+.rf-step-num { width: 30px; height: 30px; border-radius: 50%; background: #E8622A; color: #fff; font-weight: 700; font-size: 0.85rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.rf-step-title-input { flex: 1; padding: 8px 12px; border: 1.5px solid #E8E0D8; border-radius: 7px; font-size: 0.9rem; font-family: 'Open Sans', sans-serif; font-weight: 700; outline: none; transition: border-color 0.2s; }
+.rf-step-title-input:focus { border-color: #E8622A; }
+
+.rf-step-actions { display: flex; gap: 4px; }
+.rf-step-actions button { background: none; border: 1px solid #E8E0D8; border-radius: 5px; padding: 4px 8px; cursor: pointer; font-size: 0.8rem; color: #888; transition: all 0.2s; }
+.rf-step-actions button:hover:not(:disabled) { border-color: #E8622A; color: #E8622A; }
+.rf-step-actions button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+.rf-step-item textarea { width: 100%; padding: 9px 12px; border: 1.5px solid #E8E0D8; border-radius: 7px; font-size: 0.9rem; font-family: 'Open Sans', sans-serif; outline: none; transition: border-color 0.2s; resize: vertical; line-height: 1.65; }
+.rf-step-item textarea:focus { border-color: #E8622A; }
+
+/* ACTIONS */
+.rf-actions { display: flex; gap: 1rem; justify-content: flex-end; margin-top: 0.5rem; padding-bottom: 3rem; flex-wrap: wrap; }
+
+.rf-btn-draft {
+  background: #fff; border: 2px solid #E8E0D8; border-radius: 8px;
+  padding: 12px 26px; font-size: 0.95rem; font-weight: 700; cursor: pointer;
+  font-family: 'Open Sans', sans-serif; color: #555; transition: all 0.2s;
+}
+.rf-btn-draft:hover { border-color: #6B4C3B; color: #3D2B1F; }
+
+.rf-btn-publish {
+  background: #E8622A; color: #fff; border: none; border-radius: 8px;
+  padding: 12px 28px; font-size: 0.95rem; font-weight: 700; cursor: pointer;
+  font-family: 'Open Sans', sans-serif; transition: background 0.2s;
+}
+.rf-btn-publish:hover { background: #C44F1E; }
+.rf-btn-publish:disabled, .rf-btn-draft:disabled { opacity: 0.6; cursor: not-allowed; }
+
+@media (max-width: 600px) {
+  .rf-row { grid-template-columns: 1fr; }
+  .rf-actions { justify-content: stretch; }
+  .rf-btn-draft, .rf-btn-publish { flex: 1; text-align: center; }
+}

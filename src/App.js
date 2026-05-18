@@ -8,8 +8,15 @@ import Blog from './pages/Blog';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import RecipeDetail from './pages/RecipeDetail';
+import AdminApp from './admin/AdminApp';
 
 export default function App() {
+  // Render admin panel on /admin routes
+  if (window.location.pathname.startsWith('/admin')) {
+    return <AdminApp />;
+  }
+
   return (
     <>
       <TopBar />
@@ -18,6 +25,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/recipe/:slug" element={<RecipeDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -1,0 +1,149 @@
+.dashboard { padding: 0; }
+
+.dashboard__welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard__welcome h1 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.6rem;
+  color: #3D2B1F;
+  margin-bottom: 0.2rem;
+}
+
+.dashboard__welcome p { color: #888; font-size: 0.9rem; }
+
+.btn-new-recipe {
+  background: #E8622A;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-new-recipe:hover { background: #C44F1E; }
+
+/* STAT CARDS */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  border-radius: 12px;
+  padding: 1.4rem;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.stat-card--orange { background: #FDF0E8; border-color: #EDD5C5; }
+.stat-card--green  { background: #EBF3EE; border-color: #C3DBC9; }
+.stat-card--yellow { background: #FFFBEB; border-color: #FDE68A; }
+.stat-card--blue   { background: #EFF6FF; border-color: #BFDBFE; }
+
+.stat-card__icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.stat-card__num { font-size: 2.2rem; font-weight: 700; color: #3D2B1F; line-height: 1; margin-bottom: 0.3rem; }
+.stat-card__label { font-size: 0.8rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* ADSENSE CHECKLIST */
+.adsense-checklist {
+  background: #fff;
+  border: 1px solid #E8E0D8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.adsense-checklist h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1.1rem;
+  color: #3D2B1F;
+  margin-bottom: 1.2rem;
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.checklist-item.done { background: #EBF3EE; color: #3D6B47; }
+.checklist-item.pending { background: #FFFBEB; color: #92400E; }
+
+.adsense-tip {
+  margin-top: 1rem;
+  background: #FEF3C7;
+  border: 1px solid #FDE68A;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  font-size: 0.85rem;
+  color: #92400E;
+}
+
+/* RECENT RECIPES */
+.recent-recipes {
+  background: #fff;
+  border: 1px solid #E8E0D8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.recent-recipes__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid #E8E0D8;
+}
+
+.recent-recipes__header h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1rem;
+  color: #3D2B1F;
+}
+
+.recent-recipes__header button {
+  background: none;
+  border: none;
+  color: #E8622A;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th { background: #FAFAF7; padding: 10px 16px; text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: #888; font-weight: 700; border-bottom: 1px solid #E8E0D8; }
+.admin-table td { padding: 12px 16px; font-size: 0.88rem; color: #555; border-bottom: 1px solid #F5F0EB; vertical-align: middle; }
+.admin-table tr:last-child td { border-bottom: none; }
+.admin-table tr:hover td { background: #FAFAF7; }
+
+.cat-badge { background: #EBF3EE; color: #3D6B47; font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+.status-badge { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+.status-badge.published { background: #D1FAE5; color: #065F46; }
+.status-badge.draft { background: #FEF3C7; color: #92400E; }
+.edit-btn { background: none; border: 1px solid #E8E0D8; border-radius: 6px; padding: 5px 14px; font-size: 0.8rem; font-weight: 700; color: #555; cursor: pointer; font-family: 'Open Sans', sans-serif; transition: all 0.2s; }
+.edit-btn:hover { border-color: #E8622A; color: #E8622A; }
