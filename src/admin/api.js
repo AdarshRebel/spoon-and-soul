@@ -1,8 +1,7 @@
 // src/admin/api.js
-// All API calls to the backend server
 
-const BASE = process.env.REACT_APP_API_URL || 'https://spoon-and-soul-production.up.railway.app';
-
+const BASE = process.env.REACT_APP_API_URL 
+  || 'https://spoon-and-soul-production.up.railway.app';
 
 const getToken = () => localStorage.getItem('admin_token');
 
@@ -18,15 +17,26 @@ export const login = async (username, password) => {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password }),
   });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || 'Login failed');
+
+  const data = await res.json().catch(() => ({}));
+
+  if (!res.ok) {
+    throw new Error(data.error || 'Login failed');
+  }
+
   return data;
 };
 
 export const getMe = async () => {
-  const res = await fetch(`${BASE}/api/auth/me`, { headers: headers() });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
+  const res = await fetch(`${BASE}/api/auth/me`, {
+    method: 'GET',
+    headers: headers(),
+  });
+
+  const data = await res.json().catch(() => ({}));
+
+  if (!res.ok) throw new Error(data.error || 'Auth failed');
+
   return data;
 };
 
@@ -36,64 +46,10 @@ export const changePassword = async (currentPassword, newPassword) => {
     headers: headers(),
     body: JSON.stringify({ currentPassword, newPassword }),
   });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
 
-// ── RECIPES (ADMIN) ──
-export const getAdminRecipes = async () => {
-  const res = await fetch(`${BASE}/api/admin/recipes`, { headers: headers() });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
+  const data = await res.json().catch(() => ({}));
 
-export const createRecipe = async (recipe) => {
-  const res = await fetch(`${BASE}/api/admin/recipes`, {
-    method: 'POST',
-    headers: headers(),
-    body: JSON.stringify(recipe),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
+  if (!res.ok) throw new Error(data.error || 'Password change failed');
 
-export const updateRecipe = async (id, recipe) => {
-  const res = await fetch(`${BASE}/api/admin/recipes/${id}`, {
-    method: 'PUT',
-    headers: headers(),
-    body: JSON.stringify(recipe),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
-
-export const deleteRecipe = async (id) => {
-  const res = await fetch(`${BASE}/api/admin/recipes/${id}`, {
-    method: 'DELETE',
-    headers: headers(),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
-
-export const togglePublish = async (id) => {
-  const res = await fetch(`${BASE}/api/admin/recipes/${id}/publish`, {
-    method: 'PATCH',
-    headers: headers(),
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
-  return data;
-};
-
-export const getStats = async () => {
-  const res = await fetch(`${BASE}/api/admin/stats`, { headers: headers() });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error);
   return data;
 };
