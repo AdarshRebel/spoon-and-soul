@@ -40,6 +40,34 @@
     "intro": "A delicious, quick weeknight pasta that tastes like restaurant quality.good",
     "published": true,
     "createdAt": "2026-05-18T20:26:43.440Z",
-    "updatedAt": "2026-05-18T22:02:47.928Z"
+    "updatedAt": "2026-05-18T22:45:19.580Z"
+  },
+  {
+    "id": "131be2a6-5cd9-4375-be42-1906bf40f0ec",
+    "slug": "momo",
+    "title": "momo",
+    "excerpt": "good for health",
+    "category": "Lunch",
+    "emoji": "🍜",
+    "prepTime": "",
+    "cookTime": "",
+    "servings": "",
+    "difficulty": "Easy",
+    "ingredients": [
+      "ok"
+    ],
+    "steps": [
+      {
+        "title": "",
+        "desc": "ok"
+      }
+    ],
+    "tips": [
+      "ok"
+    ],
+    "intro": "steam momo",
+    "published": true,
+    "createdAt": "2026-05-18T22:43:30.447Z",
+    "updatedAt": "2026-05-18T22:43:30.447Z"
   }
 ]
