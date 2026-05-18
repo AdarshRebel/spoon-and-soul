@@ -74,7 +74,7 @@ export default function Home() {
             </ul>
             {optedIn ? (
               <div className="opt-in-success">
-                🎉 You're in! Check your inbox for your free guide.
+                🎉 You're in ! Check your inbox for your free guide.
               </div>
             ) : (
               <form className="opt-form" onSubmit={handleOptIn}>
