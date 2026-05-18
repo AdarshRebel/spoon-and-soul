@@ -1,27 +1,22 @@
-// src/admin/api.js
+const BASE = process.env.REACT_APP_API_URL;
 
-const BASE = process.env.REACT_APP_API_URL 
-  || 'https://spoon-and-soul-production.up.railway.app';
-
-const getToken = () => localStorage.getItem('admin_token');
-
-const headers = () => ({
-  'Content-Type': 'application/json',
-  Authorization: `Bearer ${getToken()}`,
+const authHeaders = () => ({
+  "Content-Type": "application/json",
+  Authorization: `Bearer ${localStorage.getItem("admin_token")}`,
 });
 
 // ── AUTH ──
 export const login = async (username, password) => {
   const res = await fetch(`${BASE}/api/auth/login`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password }),
   });
 
-  const data = await res.json().catch(() => ({}));
+  const data = await res.json();
 
   if (!res.ok) {
-    throw new Error(data.error || 'Login failed');
+    throw new Error(data.error || "Login failed");
   }
 
   return data;
@@ -29,27 +24,27 @@ export const login = async (username, password) => {
 
 export const getMe = async () => {
   const res = await fetch(`${BASE}/api/auth/me`, {
-    method: 'GET',
-    headers: headers(),
+    method: "GET",
+    headers: authHeaders(),
   });
 
-  const data = await res.json().catch(() => ({}));
+  const data = await res.json();
 
-  if (!res.ok) throw new Error(data.error || 'Auth failed');
+  if (!res.ok) throw new Error(data.error || "Auth failed");
 
   return data;
 };
 
 export const changePassword = async (currentPassword, newPassword) => {
   const res = await fetch(`${BASE}/api/auth/change-password`, {
-    method: 'POST',
-    headers: headers(),
+    method: "POST",
+    headers: authHeaders(),
     body: JSON.stringify({ currentPassword, newPassword }),
   });
 
-  const data = await res.json().catch(() => ({}));
+  const data = await res.json();
 
-  if (!res.ok) throw new Error(data.error || 'Password change failed');
+  if (!res.ok) throw new Error(data.error || "Password change failed");
 
   return data;
 };
